@@ -1,0 +1,234 @@
+/*
+ *
+ * login-register modal
+ * Autor: Creative Tim
+ * Web-autor: creative.tim
+ * Web script: http://creative-tim.com
+ * 
+ */
+ 
+/*  Shake animation  */
+
+@charset "UTF-8";
+
+.animated {
+    
+  -webkit-animation-duration: 1s !important;
+	   -moz-animation-duration: 1s !important;
+	     -o-animation-duration: 1s !important;
+	        animation-duration: 1s !important;
+	-webkit-animation-fill-mode: both !important;
+	   -moz-animation-fill-mode: both !important;
+	     -o-animation-fill-mode: both !important;
+	        animation-fill-mode: both !important;
+}
+
+.animated.hinges {
+	-webkit-animation-duration: 2s!important;
+	   -moz-animation-duration: 2s!important;
+	     -o-animation-duration: 2s!important;
+	        animation-duration: 2s!important;
+}
+
+.animated.slow {
+	-webkit-animation-duration: 3s!important;
+	   -moz-animation-duration: 3s!important;
+	     -o-animation-duration: 3s!important;
+	        animation-duration: 3s!important;
+}
+
+.animated.snail {
+	-webkit-animation-duration: 4s!important;
+	   -moz-animation-duration: 4s!important;
+	     -o-animation-duration: 4s!important;
+	        animation-duration: 4s!important;
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0)!important;}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px)!important;}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px)!important;}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0)!important;}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px)!important;}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px)!important;}
+}
+
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0)!important;}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px)!important;}
+	20%, 40%, 60%, 80% {-o-transform: translateX(10px)!important;}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0)!important;}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)!important;}
+	20%, 40%, 60%, 80% {transform: translateX(10px)!important;}
+}
+
+.shake {
+	-webkit-animation-name: shake !important;
+	-moz-animation-name: shake !important;
+	-o-animation-name: shake !important;
+	animation-name: shake !important;
+}
+
+.login .modal-dialog{
+    width: 350px !important;
+}
+.login .modal-footer{
+    border-top: 0 !important;
+    margin-top: 0px !important;
+    padding: 10px 20px 20px !important;
+}
+.login .modal-header {
+    border: 0 none!important;
+    padding: 15px 15px 15px!important;
+/*     padding: 11px 15px!important; */
+}
+.login .modal-body{
+/*     background-color: #eeeeee!important; */
+}
+.login .division {
+    float: none!important;
+    margin: 0 auto 18px!important;
+    overflow: hidden!important;
+    position: relative!important;
+    text-align: center!important;
+    
+    width: 100%!important;
+}
+.login .division .line {
+    border-top: 1px solid #DFDFDF!important;
+    position: absolute!important;
+    top: 10px!important;
+    width: 34%!important;
+}
+.login .division .line.l {
+    left: 0!important;
+}
+.login .division .line.r {
+    right: 0!important;
+}
+.login .division span {
+    color: #424242!important;
+    font-size: 17px!important;
+    z-index: 1000;
+}
+.login .box .social {
+    float: none!important;
+    margin: 0 auto 30px!important;
+    text-align: center!important;
+}
+
+.login .social .circle{
+    background-color: #EEEEEE!important;
+    color: #FFFFFF!important;
+    border-radius: 100px!important;
+    display: inline-block!important;
+    margin: 0 17px!important;
+    padding: 15px!important;
+}
+.login .social .circle .fa{
+    font-size: 16px!important;
+}
+.login .social .facebook{
+    background-color: #455CA8!important;
+    color: #FFFFFF!important;
+}
+.login .social .google{
+    background-color: #F74933!important;
+}
+.login .social .github{
+    background-color: #403A3A!important;
+}
+.login .facebook:hover{
+    background-color: #6E83CD!important;
+}
+.login .google:hover{
+    background-color: #FF7566!important;
+}
+.login .github:hover{
+    background-color: #4D4D4d!important;
+}
+.login .forgot {
+    color: #797979!important;
+    margin-left: 0!important;
+    overflow: hidden!important;
+    text-align: center!important;
+    width: 100%!important;
+}
+.login .btn-login, .registerBox .btn-register{
+    background-color: #00BBFF!important;
+    border-color: #00BBFF!important;
+    border-width: 0!important;
+    color: #FFFFFF!important;
+    display: block!important;
+    margin: 0 auto!important;
+    padding: 15px 50px!important;
+    text-transform: uppercase!important;
+    width: 100%!important;
+}
+.login .btn-login:hover, .registerBox .btn-register:hover{
+    background-color: #00A4E4!important;
+    color: #FFFFFF!important;
+}
+.login .form-control{
+    border-radius: 3px!important;
+    background-color: rgba(0, 0, 0, 0.09)!important;
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset!important;
+    color: #FFFFFF!important;
+}
+.login .form-control:hover{
+    background-color: rgba(0,0,0,.16)!important;
+}
+.login .form-control:focus{
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset!important;
+    background-color: rgba(0,0,0,0.23)!important;
+    color: #FFFFFF!important;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px!important;
+    border: none!important;
+    color: #333333!important;
+    font-size: 16px!important;
+    height: 46px!important;
+    margin-bottom: 5px!important;
+    padding: 13px 12px!important;
+    width: 100%!important;
+}
+
+
+@media (max-width:400px){
+    .login .modal-dialog{
+        width: 100%!important;
+    }
+}
+
+.big-login, .big-register{
+    background-color: #00bbff!important;
+    color: #FFFFFF!important;
+    border-radius: 7px!important;
+    border-width: 2px!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 200!important;
+    padding: 16px 60px!important;
+    text-transform: uppercase!important;
+    transition: all 0.3s ease 0s!important;
+}
+.big-login:hover{
+    background-color: #00A4E4!important;
+    color: #FFFFFF!important;
+}
+.big-register{
+    background-color: rgba(0,0,0,.0)!important;
+    color: #00bbff!important;
+    border-color: #00bbff!important;
+}
+.big-register:hover{
+    border-color: #00A4E4!important;
+    color:  #00A4E4!important;
+}
